@@ -19,9 +19,9 @@ $$
 \end{array}
 $$
 
-## Properties of Expectation
+### Properties of Expectation
 
-### Expectation as a linear operator
+#### Expectation as a linear operator
 
 $$
 \begin{eqnarray}
@@ -31,7 +31,7 @@ $$
 \end{eqnarray}
 $$
 
-### Change of variable
+#### Change of variable
 
 $$
 \begin{eqnarray}
@@ -40,7 +40,7 @@ $$
 \end{eqnarray}
 $$
 
-### Product of independent random variables
+#### Product of independent random variables
 
 $$
 \begin{array} {llllllll}
@@ -49,9 +49,7 @@ $$
 \end{array}
 $$
 
-
-
-### Cauchy-Schwartz inequality
+#### Cauchy-Schwartz inequality
 
 $$
 \begin{eqnarray}
