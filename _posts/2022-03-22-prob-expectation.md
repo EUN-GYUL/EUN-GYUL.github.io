@@ -4,6 +4,7 @@ title:  "Expectation"
 categories: probabilty
 tags : probabilty
 toc : true
+use_math : true
 ---
 
 ---
