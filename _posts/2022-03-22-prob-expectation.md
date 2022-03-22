@@ -15,7 +15,7 @@ use_math : true
 
 $$
 \begin{array}{lllllllll}
-\mbox{Discrete}&EX&=&\displaystyle\sum_x x * P(X=x) \nonumber\\
+\mbox{Discrete}&EX&=&\displaystyle\sum_x xP(X=x) \nonumber\\
 \mbox{Continuous}&EX&=&\displaystyle\int_{-\infty}^{\infty} x f(x)dx \nonumber\\
 \end{array}
 $$
