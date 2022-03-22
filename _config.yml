@@ -20,7 +20,7 @@ title                    : "통계 수학 머신러닝 공부 정리하기 위�
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "은결"
-description              : "공부정리하는 공간"
+description              : "공부 정리 하는 공간"
 url                      : "https://eun-gyul.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,11 +102,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "김도영"
+  name             : "은결"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "통계 공부하는 학생"
-  location         : "pusan"
-  email            :
+  bio              : "수학 통계 머신러닝 공부하는 학생"
+  location         : "Republic of Korea"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
