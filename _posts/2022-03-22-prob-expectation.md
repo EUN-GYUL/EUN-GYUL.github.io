@@ -13,11 +13,12 @@ use_math : true
 
 ## Definition
 
-
+$$
 \begin{array}{lllllllll}
 \mbox{Discrete}&EX&=&\displaystyle\sum_x x * P(X=x)\\
 \mbox{Continuous}&EX&=&\displaystyle\int_{-\infty}^{\infty} x f(x)dx\\
 \end{array}
+$$
 
 
 ### Properties of Expectation
