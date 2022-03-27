@@ -59,11 +59,13 @@ $$
 \end{eqnarray}
 $$
 
+#### Expectation of coin related random variables
 
-
-
-
-
+| $Distribution$ | $Expectation$ | $Variance$      |
+| -------------- | ------------- | --------------- |
+| $B(p)$         | $p$           | $pq$            |
+| $B(n,p)$       | $np$          | $npq$           |
+| $Geo(p)$       | $\frac{1}{p}$ | $\frac{q}{p^2}$ |
 
 
 
