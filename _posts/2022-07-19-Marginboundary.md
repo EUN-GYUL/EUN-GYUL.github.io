@@ -102,17 +102,21 @@ Margin을 최대화 하기 위해서는 $\theta$ 를 최소화 시켜야한다.
 
 # Hinge Loss
 
-
-
 $z$ 를 
+
+
 $$
 \begin{align}
 z = y^{(i)}(\theta \cdot x^{(i)} + \theta_0) \nonumber
 \end {align}
 $$
+
+
 이라 하자.
 
 Hinge Loss는 다음과 같이 정의 할 수 있다.
+
+
 $$
 \begin {eqnarray}
 Loss_h (z) &= max(0,1-z) \nonumber
@@ -122,18 +126,19 @@ $$
 
 
 
-
-
 # Objective 
 
 
 
 **Objective** 함수를 다음과 같이 정의하자.
+
+
 $$
 \begin{align}
 J(\theta,\theta_0 )= \frac{1}{n} \sum_{i=1}^n Loss_h (y^{(i)}(\theta \cdot x^{(i)} + \theta_0)) + \frac{\lambda}{n} \nonumber \lVert\theta\lVert^2
 \end {align}
 $$
+
 
 
 우리의 목표는 $J$ 함수를 최소화 시키는 것이다.
