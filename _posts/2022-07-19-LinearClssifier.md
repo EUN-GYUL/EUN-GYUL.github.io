@@ -90,6 +90,8 @@ $$
 
 
 이 업데이트된 theta에 대한 
+
+
 $$
 \begin {align}
 y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \cdot x^{(i)} + \underbrace {\theta_0 + y^{(i)}}_{\text updated\quad \theta_0})
