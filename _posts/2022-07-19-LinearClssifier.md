@@ -25,13 +25,17 @@ Unit1.Linear Classifiers and Generaliztions 중 Lecture 2 부분을 정리한 �
 
 ## 정의 
 
-$\theta$ 와 $\theta_{0}$ 가 주어졌을 때 linear classifier $h : X \rightarrow \{-1,0,+1\}$인 함수이다. 수식으로 표현하면 , $ h(x) = sing(\theta \cdot x+\theta_0)$ 
+$\theta$ 와 $\theta_{0}$ 가 주어졌을 때 linear classifier $h : X \rightarrow \{-1,0,+1\}$인 함수이다. 수식으로 표현하면 
+$$
+h(x) = sing(\theta \cdot x+\theta_0)
+$$
+$h$는 $\theta \cdot x+\theta_0 = 0$ 을 만족하는 boundary로 정의된다. 
 
-$h$는 $\theta \cdot x+\theta_0 = 0$ 을 만족하는 boundary로 정의된다. $i$ 번째 training data는 $(x^{(i)},y^{(i)})$이며 $x^{(i)}$는 vector이고 $y^{(i)}$ 는 scalar 값이다
 
-$\theta$는 $x^{(i)}$와 같은 차원을 가지는 vector이다.
 
-$y^{(i)}$ 은 label $\{-1,1\}$의 값을 가지며 으로 $\ $,  $sing(\theta \cdot x+\theta_0)$ 은 $h$ (classifier)의 결과 값으로 $\{-1,0,1\}$을 갖는다.
+$i$ 번째 training data는 $(x^{(i)},y^{(i)})$이며 $x^{(i)}$는 vector이고 $y^{(i)}$ 는 scalar 값이고 $\theta$는 $x^{(i)}$와 같은 차원을 가지는 vector이다.
+
+$y^{(i)}$ 은 label $\{-1,1\}$의 값을 가지며  $sing(\theta \cdot x+\theta_0)$ 은 $h$ (classifier)의 결과 값으로 $\{-1,0,1\}$을 갖는다.
 
 
 
@@ -47,11 +51,11 @@ label 값과  분류한 값이 일치하지 않을 때를 의미한다.
 
 
 
-즉 $y^{(i)} ( \theta \cdot x+\theta_0 ) \le 0$  값이 커지면 더 나은 분류를 하고 있다고 볼 수 있다.
+즉  $y^{(i)} ( \theta \cdot x+\theta_0 ) \le 0$  값이 커지면 더 나은 분류를 하고 있다고 볼 수 있다.
 
 
 
- 
+
 
 # Perceptron
 
@@ -77,34 +81,25 @@ def percetpron(X , y , T):
 
 mistake가 발생 했을 때 , 업데이트된 theta 값들은 더 나은 결과를 낸다고 어떻게 알 수 있는가?
 
-즉
-
- 
 $$
 \theta = \theta + y^{(i)}x^{(i)} \\
 \theta_0 = \theta_0 + y^{(i)}
 $$
+
+
 이 업데이트된 theta에 대한 
-
-
 $$
 \begin {align}
 y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \cdot x^{(i)} + \underbrace {\theta_0 + y^{(i)}}_{\text updated\quad \theta_0})
 \end {align}
 $$
 위의 식의 값이 
-
-
 $$
 y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
 $$
 값보다 항상 크다고 할 수 있는가? 
 
-
-
 위의 두 식을 빼면 
-
-
 $$
 y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0 
 $$
