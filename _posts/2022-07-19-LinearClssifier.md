@@ -92,6 +92,8 @@ $$
 이 업데이트된 theta에 대한 
 
 
+
+
 $$
 \begin {align}
 y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \cdot x^{(i)} + \underbrace {\theta_0 + y^{(i)}}_{\text updated\quad \theta_0})
@@ -109,9 +111,9 @@ $$
 
 위의 두 식을 빼면 
 $$
-\begin {eqnarray}
+\begin {align}
 y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0
-\end {eqnarray}
+\end {align}
 $$
  그러므로 업데이트 된 값이 더 나은 분류 값이라고 할 수 있다.
 
