@@ -49,14 +49,24 @@ $$
 
 
 **decision boundary**  는
+
+
 $$
 \begin{align}
 \theta \cdot x + \theta_0 = 0 \nonumber
 \end {align}
 $$
+
+
 을 만족 하는 점 $x$의 집합이며
 
+
+
+
+
 **margin boundary** 는
+
+
 $$
 \begin{align}
 \theta \cdot x + \theta_0 = \pm 1 \nonumber
