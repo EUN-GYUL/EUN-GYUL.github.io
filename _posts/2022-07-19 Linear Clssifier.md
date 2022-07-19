@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Linear Separation "
+title:  "Linear Separation and Perceptron"
 categories: Machine Learning
 toc : true
 use_math : true
@@ -28,9 +28,67 @@ $y^{(i)}$ 은 label $\{-1,1\}$의 값을 가지며 으로 $\ $,  $sing(\theta \c
 
  $y^{(i)} ( \theta \cdot x+\theta_0 )>0$  을 만족 하기 위해서는 
 
-$y^{(i)}>0$ and $\theta \cdot x+\theta_0>0$  이거나 $y^{(i)}>0$ and $\theta \cdot x+\theta_0 < 0$일 때 이다. 즉 label 값과 예측 값이 같을 때 이다.
+$y^{(i)}>0$ and $\theta \cdot x+\theta_0>0$  이거나 $y^{(i)}>0$ and $\theta \cdot x+\theta_0 < 0$일 때 이다. 즉 label 값과  분류한 값이 같을 때 이다.
+
+
+
+ $y^{(i)} ( \theta \cdot x+\theta_0 ) \le 0$ 이면
+
+label 값과  분류한 값이 일치하지 않을 때를 의미한다.
+
+
+
+즉 $y^{(i)} ( \theta \cdot x+\theta_0 ) \le 0$  값이 커지면 더 나은 분류를 하고 있다고 볼 수 있다.
+
+
 
  
 
+# Perceptron
 
 
+
+퍼셉트론(Perceptron) 알고리즘은 "mistake" (  $y^{(i)}(\theta \cdot x^{(i)}) \le 0$ )가 발생 할 때 마다 $\theta$를 업데이트한다.
+
+```
+def percetpron(X , y , T):
+    n = X.shape[0]
+    theta = 0
+    theta_0 = 0
+    for t in range(T): 
+        for i in range(n):
+            if y[i] * (np.dot(theta,X[i]) + theta_0) <=0 :
+                theta = theta + y[i]*X[i]
+                theta_0 = theta_0 + y[i]
+    
+    return theta, theta_0
+```
+
+
+
+mistake가 발생 했을 때 , 업데이트된 theta 값들은 더 나은 결과를 낸다고 어떻게 알 수 있는가?
+
+즉 
+$$
+\theta = \theta + y^{(i)}x^{(i)} \\
+\theta_0 = \theta_0 + y^{(i)}
+$$
+이 업데이트된 theta에 대한 
+$$
+\begin {align}
+y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \cdot x^{(i)} + \underbrace {\theta_0 + y^{(i)}}_{\text updated\quad \theta_0})
+\end {align}
+$$
+위의 식의 값이 
+$$
+y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
+$$
+값보다 항상 크다고 할 수 있는가? 
+
+
+
+위의 두 식을 빼면 
+$$
+y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0 
+$$
+ 그러므로 업데이트 된 값이 더 나은 분류 값이라고 할 수 있다.
