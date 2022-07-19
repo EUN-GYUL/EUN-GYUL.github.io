@@ -27,9 +27,11 @@ Unit1.Linear Classifiers and Generaliztions 중 Lecture 2 부분을 정리한 �
 
 $\theta$ 와 $\theta_{0}$ 가 주어졌을 때 linear classifier $h : X \rightarrow \{-1,0,+1\}$인 함수이다. 수식으로 표현하면 
 $$
+\begin {align}
 h(x) = sing(\theta \cdot x+\theta_0)
+\end {align}
 $$
-$h$는 $\theta \cdot x+\theta_0 = 0$ 을 만족하는 boundary로 정의된다. 
+$h$는 $\\theta \cdot x+\theta_0 = 0$ 을 만족하는 boundary로 정의된다. 
 
 
 
