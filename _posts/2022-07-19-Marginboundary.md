@@ -14,17 +14,19 @@ use_math : true
 
 Unit1.Linear Classifiers and Generaliztions 중 Lecture 3 부분을 정리한 것 입니다.
 
+---
+
 
 
 $\mathbb R^2$ 공간에 있는 직선 $L$은
 $$
 \begin{align}
-L:\theta \cdot x + \theta_0 = 0
+L:\theta \cdot x + \theta_0 = 0 \nonumber
 \end{align}
 $$
-$\theta$는 직
 
-선 $L$ 에 수직(Normal to the line L)인 벡터이다.
+
+$\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다.
 
 
 
@@ -37,7 +39,7 @@ $\theta$는 직
 
 $$
 \begin{align}
-d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert}
+d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert} \nonumber
 \end {align}
 $$
 
@@ -49,18 +51,22 @@ $$
 **decision boundary**  는
 $$
 \begin{align}
-\theta \cdot x + \theta_0 = 0
+\theta \cdot x + \theta_0 = 0 \nonumber
 \end {align}
 $$
 을 만족 하는 점 $x$의 집합이며
 
-**margin boundary** 는 
+**margin boundary** 는
 $$
 \begin{align}
-\theta \cdot x + \theta_0 = \pm 1
+\theta \cdot x + \theta_0 = \pm 1 \nonumber
 \end{align}
 $$
+
+
 을 만족하는 점 $x$ 의 집합이다.
+
+
 
 
 
@@ -69,7 +75,7 @@ $$
 decision boundary 까지의 거리를 구하면  두 경계의 거리가 된다.
 $$
 \begin{align}
-\frac {|\theta \cdot x + \theta_0|}{\lVert \theta \rVert} = \frac {1}{\lVert \theta \rVert}
+\frac {|\theta \cdot x + \theta_0|}{\lVert \theta \rVert} = \frac {1}{\lVert \theta \rVert} \nonumber
 \end {align}
 $$
 즉 **decision boundary** 에서 **margin boundary** 까지의 거리는 $\frac {1}{ \lVert\theta\rVert}$가 된다. 
@@ -91,7 +97,7 @@ Margin을 최대화 하기 위해서는 $\theta$ 를 최소화 시켜야한다.
 $z$ 를 
 $$
 \begin{align}
-z = y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
+z = y^{(i)}(\theta \cdot x^{(i)} + \theta_0) \nonumber
 \end {align}
 $$
 이라 하자.
@@ -99,7 +105,7 @@ $$
 Hinge Loss는 다음과 같이 정의 할 수 있다.
 $$
 \begin {eqnarray}
-Loss_h (z) &= max(0,1-z)
+Loss_h (z) &= max(0,1-z) \nonumber
 \end {eqnarray}
 $$
 
@@ -115,7 +121,7 @@ $$
 **Objective** 함수를 다음과 같이 정의하자.
 $$
 \begin{align}
-J(\theta,\theta_0 )= \frac{1}{n} \sum_{i=1}^n Loss_h (y^{(i)}(\theta \cdot x^{(i)} + \theta_0)) + \frac{\lambda}{n} \lVert\theta\lVert^2
+J(\theta,\theta_0 )= \frac{1}{n} \sum_{i=1}^n Loss_h (y^{(i)}(\theta \cdot x^{(i)} + \theta_0)) + \frac{\lambda}{n} \nonumber \lVert\theta\lVert^2
 \end {align}
 $$
 
