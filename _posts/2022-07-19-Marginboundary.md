@@ -36,7 +36,9 @@ $\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다.
 
 
 $$
+\begin{align}
 d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert}
+\end {align}
 $$
 이다.
 
