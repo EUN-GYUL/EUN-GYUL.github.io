@@ -82,8 +82,10 @@ def percetpron(X , y , T):
 mistake가 발생 했을 때 , 업데이트된 theta 값들은 더 나은 결과를 낸다고 어떻게 알 수 있는가?
 
 $$
+\begin {align}
 \theta = \theta + y^{(i)}x^{(i)} \\
 \theta_0 = \theta_0 + y^{(i)}
+\end {align}
 $$
 
 
@@ -95,12 +97,17 @@ y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \c
 $$
 위의 식의 값이 
 $$
+\begin {align}
 y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
+\end {align}
 $$
 값보다 항상 크다고 할 수 있는가? 
 
 위의 두 식을 빼면 
 $$
-y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0 
+\begin {eqnarray}
+y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0
+\end {eqnarray}
 $$
  그러므로 업데이트 된 값이 더 나은 분류 값이라고 할 수 있다.
+
