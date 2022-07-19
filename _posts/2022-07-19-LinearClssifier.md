@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Linear Separation and Perceptron"
-categories: Machine Learning
+categories: MachineLearning
 toc : true
 use_math : true
 ---
@@ -68,18 +68,24 @@ def percetpron(X , y , T):
 
 mistake가 발생 했을 때 , 업데이트된 theta 값들은 더 나은 결과를 낸다고 어떻게 알 수 있는가?
 
-즉 
+즉
+
+ 
 $$
 \theta = \theta + y^{(i)}x^{(i)} \\
 \theta_0 = \theta_0 + y^{(i)}
 $$
 이 업데이트된 theta에 대한 
+
+
 $$
 \begin {align}
 y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \cdot x^{(i)} + \underbrace {\theta_0 + y^{(i)}}_{\text updated\quad \theta_0})
 \end {align}
 $$
 위의 식의 값이 
+
+
 $$
 y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
 $$
@@ -88,6 +94,8 @@ $$
 
 
 위의 두 식을 빼면 
+
+
 $$
 y^{(i)}y^{(i)}x^{(i)}\cdot x^{(i)} = (y^{(i)})^2\ {\lVert x^{(i)} \rVert}^2 \ge 0 
 $$
