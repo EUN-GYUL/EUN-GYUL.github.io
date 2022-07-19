@@ -2,7 +2,6 @@
 layout: single
 title:  "Margin boundary"
 categories: MachineLearning
-toc : true
 use_math : true
 ---
 
@@ -24,6 +23,8 @@ $\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다.
 
 
 
+
+
 점 $P$를 벡터 $x_0$의 종점이라 하자. 
 
 점$P$ 와 직선 $L$ 사이의 거리는 
@@ -34,6 +35,8 @@ $$
 d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert}
 \end {align}
 $$
+
+
 이다.
 
 
@@ -42,7 +45,7 @@ $$
 $$
 \theta \cdot x + \theta_0 = 0
 $$
-을 만족하는 점$x$의 집합이며
+을 만족하는 점 $x$의 집합이며
 
 **margin boundary** 는 
 $$
