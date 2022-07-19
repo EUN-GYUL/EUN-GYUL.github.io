@@ -2,6 +2,7 @@
 layout: single
 title:  "Linear Separation and Perceptron"
 categories: MachineLearning
+tag : 정리
 toc : true
 use_math : true
 ---
@@ -10,7 +11,15 @@ use_math : true
 
 
 
+
+
 # Linear Classifier 
+
+
+
+**Machine Learning with Python-From Linear Models to Deep Learning** 에서 
+
+Unit1.Linear Classifiers and Generaliztions 중 Lecture 2 부분을 정리한 것 입니다.
 
 
 
