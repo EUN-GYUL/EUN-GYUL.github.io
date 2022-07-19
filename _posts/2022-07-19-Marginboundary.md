@@ -33,10 +33,14 @@ $\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다.
 
 
 점$P$ 와 직선 $L$ 사이의 거리는 
+
+
 $$
 d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert}
 $$
 이다.
+
+
 
 
 
