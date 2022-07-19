@@ -16,21 +16,15 @@ Unit1.Linear Classifiers and Generaliztions 중 Lecture 3 부분을 정리한 �
 
 
 
-
-
 $\mathbb R^2$ 공간에 있는 직선 $L$은
-
-
 $$
 L:\theta \cdot x + \theta_0 = 0
 $$
+$\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다.
 
 
-$\theta$는 직선 $L$ 에 수직(Normal to the line L)인 벡터이다. 
 
 점 $P$를 벡터 $x_0$의 종점이라 하자. 
-
-
 
 점$P$ 와 직선 $L$ 사이의 거리는 
 
@@ -41,8 +35,6 @@ d = \frac {|\theta \cdot x_0 + \theta_0|}{\lVert \theta \rVert}
 \end {align}
 $$
 이다.
-
-
 
 
 
