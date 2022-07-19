@@ -2,6 +2,7 @@
 layout: single
 title:  "Margin boundary"
 categories: MachineLearning
+toc : true
 use_math : true
 ---
 
