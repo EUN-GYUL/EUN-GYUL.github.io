@@ -98,6 +98,8 @@ y^{(i)}( \underbrace {(\theta + y^{(i)}x^{(i)})}_{\text updated \quad \theta} \c
 \end {align}
 $$
 위의 식의 값이 
+
+
 $$
 \begin {align}
 y^{(i)}(\theta \cdot x^{(i)} + \theta_0)
