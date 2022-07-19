@@ -83,11 +83,15 @@ $$
 두 경계는 평행하므로 $x$를 margin boundary 위의 점이라 하고
 
 decision boundary 까지의 거리를 구하면  두 경계의 거리가 된다.
+
+
 $$
 \begin{align}
 \frac {|\theta \cdot x + \theta_0|}{\lVert \theta \rVert} = \frac {1}{\lVert \theta \rVert} \nonumber
 \end {align}
 $$
+
+
 즉 **decision boundary** 에서 **margin boundary** 까지의 거리는 $\frac {1}{ \lVert\theta\rVert}$가 된다. 
 
 
